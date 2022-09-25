@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar {
+    position:absolute;
+    background-color: #042331;
+    height: 100%;
+    width: 250px;
+    left: -250px;
+    transition: .5s all;
+
+}
+
+.sidebar header{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    color: white;
+    line-height:70px;
+    background-color: #063146;
+}
+
+ul li {
+    width: 100%;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 65px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .5s;
+    
+}
+
+ul li:hover  {
+    padding-left: 50px; 
+}
+
+.sidebar ul li i{
+    margin-right: 15px;
+}
+
+ul li a{
+    color: white;
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    cursor: pointer;
+    position: absolute;
+    background-color: #042331
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 25px;
+    color: white;
+    border-radius: 3px;
+    padding: 4px 9px;
+    transition: all .5s;
+}
+
+#check:checked ~ .sidebar{
+    left: 0
+}
+
+label #cancel{
+    left:-195px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+    border-radius: 3px;
+    padding: 4px 9px;
+    z-index: 100;
+    transition: all .5s;
+
+}
+
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+
+section{
+    background-image: url(pretty-woman-sipping-coffee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    transition: all .5s;
+}
+
+#check:checked ~ section{
+   margin-left:250px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
